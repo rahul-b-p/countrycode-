@@ -1,0 +1,38 @@
+*{
+    /* width: 100%;
+    margin: 0px;
+    padding: 0px; */
+    overflow-x: hidden;
+}
+#main{
+    background-image: url('./media/mybg.jpg');
+    height: 200vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#box{
+    width: 500px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.534);
+    border-radius: 7px;
+}
+
+h1{
+    font-size: 45px;
+    font-weight: 600;
+    overflow: hidden;
+}
+h4{
+    overflow: hidden;
+}
+hr{
+    color: white;
+    
+}
+.card{
+    background-color: rgba(0, 0, 0, 0.534);
+    padding: 20px;
+}
