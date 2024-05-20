@@ -25,7 +25,7 @@
                         <p class="fs-2 text-center text-light mt-4">Enter the Country Name ...</p>
                         <div class="d-flex justify-content-center align-items-center">
                             <form action="">
-                                <input class="rounded-2 border border-1 border-light" type="text"> <button class="btn btn-outline-light">Search</button>
+                                <input id="country" class="rounded-2 border border-1 border-light" type="text"> <button type="button" onclick="search()" class="btn btn-outline-light">Search</button>
                             </form>
                         </div>
                     </div>
@@ -38,30 +38,14 @@
 
         <!-- country -->
         <div class="row">
-            <div class="col-1 col-md-4"></div>
-            <div class="col-10 col-md-4">
-                <div class="card" style="width: 27rem;">
-                    <img src="./media/modelflag.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title text-light">Card title</h4>
-                      <ul>
-                        <li class="list-group-item text-light">An item</li>
-                        <li class="list-group-item text-light">A second item</li>
-                        <li class="list-group-item text-light">A third item</li>
-                        <li class="list-group-item text-light">A third item</li>
-                        <li class="list-group-item text-light">A third item</li>
-                        <li class="list-group-item text-light">A third item</li>
-                        <li class="list-group-item text-light">A third item</li>
-                        <li class="list-group-item text-light">A third item</li>
-                        <li class="list-group-item text-light">A third item</li>
-                      </ul>
-                    </div>
-                    
-                  </div>
+            <div class="col-1 col-md-3"></div>
+            <div id="result" class="col-10 col-md-6">
+
             </div>
-            <div class="col-1 col-md-4"></div>
+            <div class="col-1 col-md-3"></div>
         </div>
     </div>
 
 </body>
+<script src="./logic.js"></script>
 </html>
