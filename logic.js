@@ -1,11 +1,11 @@
 search = async() =>{
     let CountryName = country.value
-    console.log(CountryName);
+    // console.log(CountryName);
 
     if (CountryName) {
         const response = await fetch(`https://restcountries.com/v3.1/name/${CountryName}?fullText=true`)
         response.json().then((data)=>{
-            console.log(data[0]);
+            // console.log(data[0]);
 
             // common name
             cName=data[0].name.common
@@ -41,11 +41,11 @@ search = async() =>{
 
             // Area
             arr=data[0].area
-            console.log(data[0].area);
+            // console.log(data[0].area);
 
             // Google Maps
             map=data[0].maps.googleMaps
-            console.log(data[0].maps.googleMaps);
+            // console.log(data[0].maps.googleMaps);
 
             // population
             popltn=data[0].population
@@ -77,9 +77,9 @@ search = async() =>{
                 <li class="list-group-item text-light"><b>Languages</b> : ${langstr}</li>
                 <li class="list-group-item text-light"><b>Boarders</b> : ${brdrs}</li>
                 <li class="list-group-item text-light"><b>Continent</b> : ${contint}</li>
-                <li class="list-group-item text-light"><b>Timezones</b> : ${tZone}<li>
                 <li class="list-group-item text-light"><b>population</b> : ${popltn}</li>
                 <li class="list-group-item text-light"><b>Area</b> : ${arr}</li>
+                <li class="list-group-item text-light"><b>Timezones</b> : ${tZone}<li>
               </ul>
               <hr>
               <div class="d-flex justify-content-center align-items-center"><a href="${map}" class="btn btn-outline-light text-center">Click here to view map</a></div>
